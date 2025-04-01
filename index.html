@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diario Digital</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Estudio Fotográfico</title>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#galeria">Galería</a></li>
                 <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#reservas">Reservas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -20,39 +21,66 @@
 
     <main>
         <section id="inicio" class="hero">
-            <h1>Bienvenido a Mi Sitio Web</h1>
-            <p>Un lugar donde la creatividad y la innovación se encuentran</p>
+            <h1>Estudio Fotográfico</h1>
+            <p></p>
         </section>
 
-        <section id="acerca" class="about">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo apasionado por crear experiencias web únicas y memorables.</p>
+        <section id="galeria" class="gallery">
+            <h2>Nuestra Galería</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a href="bodas.html" class="gallery-link">
+                        <img src="assets/img/bodas.jpg" alt="Bodas">
+                        <h3>Bodas</h3>
+                        <div class="gallery-overlay">
+                            <p>Ver más fotos de bodas</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/retratos.jpg" alt="Retratos">
+                    <h3>Retratos</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/paisajes.jpg" alt="Paisajes">
+                    <h3>Paisajes</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/productos.jpg" alt="Productos">
+                    <h3>Productos</h3>
+                </div>
+            </div>
         </section>
 
         <section id="servicios" class="services">
             <h2>Nuestros Servicios</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Diseño Web</h3>
-                    <p>Creamos sitios web modernos y responsivos</p>
+                    <h3>Retratos Profesionales</h3>
+                    <p>Sesiones fotográficas individuales y familiares</p>
+                    <p class="price">Desde $50</p>
                 </div>
                 <div class="service-card">
-                    <h3>Desarrollo</h3>
-                    <p>Desarrollamos aplicaciones web personalizadas</p>
+                    <h3>Bodas y Eventos</h3>
+                    <p>Cobertura completa de tu día especial</p>
+                    <p class="price">Desde $500</p>
                 </div>
                 <div class="service-card">
-                    <h3>Marketing Digital</h3>
-                    <p>Estrategias efectivas para tu presencia online</p>
+                    <h3>Fotografía de Productos</h3>
+                    <p>Imágenes profesionales para tu negocio</p>
+                    <p class="price">Desde $100</p>
                 </div>
-            </div>
-            <div class="services-cta">
-                <a href="#formulario-cliente" class="btn-cliente">Registrarse como Cliente</a>
+                <div class="service-card">
+                    <h3>Fotografía de Moda</h3>
+                    <p>Sesiones fotográficas para marcas y diseñadores</p>
+                    <p class="price">Desde $200</p>
+                </div>
             </div>
         </section>
 
-        <section id="formulario-cliente" class="client-form">
-            <h2>Registro de Cliente</h2>
-            <form class="form-cliente">
+        <section id="reservas" class="booking">
+            <h2>Reserva tu Sesión</h2>
+            <form class="booking-form">
                 <div class="form-group">
                     <input type="text" placeholder="Nombre Completo" required>
                 </div>
@@ -64,35 +92,44 @@
                 </div>
                 <div class="form-group">
                     <select required>
-                        <option value="">Seleccione un Servicio</option>
-                        <option value="diseno">Diseño Web</option>
-                        <option value="desarrollo">Desarrollo</option>
-                        <option value="marketing">Marketing Digital</option>
+                        <option value="">Selecciona el Tipo de Sesión</option>
+                        <option value="retratos">Retratos</option>
+                        <option value="bodas">Bodas</option>
+                        <option value="eventos">Eventos</option>
+                        <option value="productos">Fotografía de Productos</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <textarea placeholder="Describe tu proyecto" required></textarea>
+                    <input type="date" required>
                 </div>
                 <div class="form-group">
-                    <input type="file" accept=".pdf,.doc,.docx" placeholder="Adjuntar documento (opcional)">
+                    <input type="time" required>
                 </div>
-                <button type="submit" class="btn-submit">Enviar Registro</button>
+                <div class="form-group">
+                    <textarea placeholder="Detalles adicionales (ubicación, cantidad de personas, etc.)" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Reservar Ahora</button>
             </form>
         </section>
 
         <section id="contacto" class="contact">
             <h2>Contacto</h2>
-            <form>
+            <div class="contact-info">
+                <p>📞 Teléfono: (123) 456-7890</p>
+                <p>📧 Email: info@estudiofotograficoCamila.com</p>
+                <p>📍 Dirección: Calle Principal 123, temuco</p>
+            </div>
+            <form class="contact-form">
                 <input type="text" placeholder="Nombre" required>
                 <input type="email" placeholder="Email" required>
                 <textarea placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar Mensaje</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Estudio Fotográfico. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html> 

@@ -1,0 +1,152 @@
+.bodas-gallery {
+    padding: 8rem 2rem 5rem;
+    background-color: #f8f9fa;
+}
+
+.bodas-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.home-button {
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    text-decoration: none;
+    color: #072c32;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 2px solid #072c32;
+    border-radius: 25px;
+}
+
+.home-button:hover {
+    color: #007bff;
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.bodas-header h1 {
+    color: #072c32;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.bodas-description {
+    color: #666;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bodas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.boda-item {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.boda-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.folder-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem;
+    border-radius: 50%;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.folder-icon i {
+    color: #072c32;
+    font-size: 1.2rem;
+}
+
+.boda-item:hover .folder-icon {
+    transform: scale(1.1);
+}
+
+.boda-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.boda-item:hover img {
+    transform: scale(1.1);
+}
+
+.boda-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.boda-item:hover .boda-overlay {
+    transform: translateY(0);
+}
+
+.boda-overlay h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.boda-overlay p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.photo-count {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .bodas-header {
+        padding-top: 2rem;
+    }
+
+    .home-button {
+        position: static;
+        justify-content: center;
+        margin-bottom: 1rem;
+        display: inline-flex;
+    }
+
+    .bodas-grid {
+        grid-template-columns: 1fr;
+    }
+} 
