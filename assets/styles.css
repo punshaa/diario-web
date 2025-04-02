@@ -1,8 +1,8 @@
 /* Estilos generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /*es el margen de los elementos*/
+    padding: 0; /*es el padding de los elementos*/
+    box-sizing: border-box; /*es el box-sizing de los elementos*/
 }
 
 body {
@@ -13,30 +13,30 @@ body {
 
 /* Header y navegación */
 header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #fff; /*es el color de fondo del encabezado*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /*es el sombreado del encabezado*/
+    position: fixed; /*es la posicion del encabezado*/
+    width: 100%; /*es el ancho del encabezado*/
+    top: 0; /*es la posicion del encabezado*/
+    z-index: 1000; /*es el z-index del encabezado*/
 }
 
-nav ul {
-    display: flex;
+nav ul { /*Cambia el comportamiento de la lista  para que use el modelo de caja flexible*/
+    display: flex; /*es el display del encabezado*/
     justify-content: center;
-    list-style: none;
+    list-style: none; /*Quita los viñetas/puntos negros (•) que suelen aparecer junto a los elementos de una lista */
     padding: 1rem 0;
 }
 
 nav ul li {
-    margin: 0 1.5rem;
+    margin: 0 1.5rem; /*es el margen del encabezado*/
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #507c44;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    text-decoration: none; /*quita el subrayado de los enlaces*/
+    color: #507c44; /*es el color del texto del encabezado*/
+    font-weight: 500; /*es el grosor del texto del encabezado*/
+    transition: color 0.3s ease; /*es el tiempo de transicion del color del texto del encabezado*/
 }
 
 nav ul li a:hover {
@@ -46,7 +46,7 @@ nav ul li a:hover {
 /* Sección Hero */
 .hero {
     height: 100vh;
-    background-image: url('img/fondo.jpg'); /* Ruta de tu imagen */
+    background-image: url('img/fondo.jpg'); /* Ruta de la imagen */
     background-size: cover; /* Ajusta la imagen al contenedor */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repeticiones de la imagen */
@@ -79,76 +79,76 @@ nav ul li a:hover {
 }
 
 .hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 1.2rem; /*es el tamaño del texto del encabezado*/
+    max-width: 600px; /*es el ancho maximo del texto del encabezado*/
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5); /* Sombras más suaves */
     z-index: 1; /* Mantiene el texto visible */
 }
 
 
 .hero h1 {
-    font-size: 6rem;
+    font-size: 6rem; /*es el tamaño del texto del encabezado*/
     margin-bottom: 1rem;
     text-shadow: 3px 3px 8px rgba(0, 0, 0, 1.7); /* Sombras más destacadas */
     z-index: 1; /* Asegura que el título esté encima del fondo */
 }
 
 .hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 1.2rem; /*es el tamaño del texto del encabezado*/
+    max-width: 600px; /*es el ancho maximo del texto del encabezado*/
 }
 
 /* Galería */
 .gallery {
-    padding: 5rem 2rem;
+    padding: 5rem 2rem; /*Añade espaciado interno (padding) dentro del contenedor*/
     background-color: #f8f9fa;
 }
 
 .gallery h2 {
-    text-align: center;
-    margin-bottom: 3rem;
+    text-align: center; /*Alinea el texto al centro*/
+    margin-bottom: 3rem; /*Añade margen inferior para separar el encabezado de la galería*/
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid; /*Cambia el comportamiento de la lista  para que use el modelo de caja flexible*/
+    grid-template-columns: repeat(2, 1fr); /*Define el numero de columnas en la grilla*/
+    gap: 2rem; /*Añade espacio entre las columnas*/
+    max-width: 1200px; /*Define el ancho maximo de la grilla*/
+    margin: 0 auto; /*Centra la grilla horizontalmente*/
 }
 
 .gallery-column {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: flex; /*Cambia el comportamiento de la lista  para que use el modelo de caja flexible*/
+    flex-direction: column; /*Cambia la direccion de la grilla para que se vea verticalmente*/
+    gap: 2rem; /*Añade espacio entre las columnas*/
 }
 
 .gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative; /*Cambia el comportamiento de la lista  para que use el modelo de caja flexible*/
+    overflow: hidden; /*Añade un efecto de desenfoque al contenido*/
+    border-radius: 8px; /*Añade bordes redondeados al contenido*/
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1); /*Añade un efecto de sombra al contenido*/
 }
 
 .gallery-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+    text-decoration: none; /*quita el subrayado de los enlaces*/
+    color: inherit; /*Añade un efecto de desenfoque al contenido*/
+    display: block; /*Cambia el comportamiento de la lista  para que use el modelo de caja flexible*/
 }
 
 .gallery-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    transition: all 0.5s ease;
+    width: 100%; /*Añade un efecto de desenfoque al contenido*/
+    height: 300px; /*Añade un efecto de desenfoque al contenido*/
+    object-fit: cover; /*Añade un efecto de desenfoque al contenido*/
+    transition: all 0.5s ease; /*Añade un efecto de desenfoque al contenido*/
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1); /*Añade un efecto de desenfoque al contenido*/
 }
 
 .gallery-item h3 {
-    position: absolute;
+    position: absolute; 
     bottom: 0;
     left: 0;
     right: 0;
@@ -161,7 +161,7 @@ nav ul li a:hover {
 }
 
 .gallery-overlay {
-    position: absolute;
+    position: absolute
     top: 0;
     left: 0;
     right: 0;

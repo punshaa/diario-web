@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!--especifica la version mas reciente de html:)-->
+<html lang="es"> <!--especifica el idioma de la pagina-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio Fotográfico</title>
-    <link rel="stylesheet" href="assets/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
+    <meta charset="UTF-8" > <!--especifica la codificacion de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--especifica la escala de la pagina-->
+    <title>Estudio Fotográfico</title> <!--especifica el titulo de la pagina arribita en la pestaña del navegador-->
+    <link rel="stylesheet" href="assets/styles.css"> <!--enlace a la hoja de estilos-->
+</head> <!--cierre de la etiqueta head (estos son los datos de la pagina que no se ven en el navegador)-->
+<body> <!--cierre de la etiqueta body (estos son los datos de la pagina que se ven en el navegador)-->
+    <header> <!--es la parte superior de la pagina-->
+        <nav> <!--es el menu de navegacion-->
+            <ul> <!--es la lista de enlaces-->
+                <li><a href="#inicio">Inicio</a></li> <!--es el enlace a la seccion de inicio (la a es para que se vea como un enlace)-->
                 <li><a href="#galeria">Galería</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#reservas">Reservas</a></li>
@@ -19,7 +19,7 @@
         </nav>
     </header>
 
-    <main>
+    <main> <!--es la parte principal de la pagina-->
         <section id="inicio" class="hero">
             <h1>Estudio Fotográfico</h1>
             <p></p>
@@ -27,16 +27,16 @@
 
         <section id="galeria" class="gallery">
             <h2>Nuestra Galería</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <a href="bodas.html" class="gallery-link">
+            <div class="gallery-grid"> <!--esto organiza las imagenes en una cuadricula-->
+                <div class="gallery-item"> <!--es cada una de las imagenes de la cuadricula-->
+                    <a href="bodas.html" class="gallery-link"> <!--es el enlace a la pagina de bodas-->
                         <img src="assets/img/bodas.jpg" alt="Bodas">
                         <h3>Bodas</h3>
-                        <div class="gallery-overlay">
+                        <div class="gallery-overlay"> <!--es la cosa que sube y muestra el texto-->
                             <p>Ver más fotos de bodas</p>
                         </div>
-                    </a>
-                </div>
+                    </a> 
+                </div> <!--envuelve cada una de las imagenes de la cuadricula)-->
                 <div class="gallery-item">
                     <img src="assets/img/retratos.jpg" alt="Retratos">
                     <h3>Retratos</h3>
@@ -54,8 +54,8 @@
 
         <section id="servicios" class="services">
             <h2>Nuestros Servicios</h2>
-            <div class="services-grid">
-                <div class="service-card">
+            <div class="services-grid"> <!--esto organiza los servicios en una cuadricula-->
+                <div class="service-card" > <!--es cada una de las tarjetas de los servicios-->
                     <h3>Retratos Profesionales</h3>
                     <p>Sesiones fotográficas individuales y familiares</p>
                     <p class="price">Desde $50</p>
@@ -80,8 +80,8 @@
 
         <section id="reservas" class="booking">
             <h2>Reserva tu Sesión</h2>
-            <form class="booking-form">
-                <div class="form-group">
+            <form class="booking-form"> <!--es el formulario de reservas-->
+                <div class="form-group"> <!--es cada una de las cajas de texto del formulario-->
                     <input type="text" placeholder="Nombre Completo" required>
                 </div>
                 <div class="form-group">
@@ -91,7 +91,7 @@
                     <input type="tel" placeholder="Teléfono" required>
                 </div>
                 <div class="form-group">
-                    <select required>
+                    <select required> <!--es el menu desplegable del formulario-->
                         <option value="">Selecciona el Tipo de Sesión</option>
                         <option value="retratos">Retratos</option>
                         <option value="bodas">Bodas</option>
@@ -128,8 +128,8 @@
         </section>
     </main>
 
-    <footer>
+    <footer> <!--es la parte inferior de la pagina-->
         <p>&copy; 2024 Estudio Fotográfico. Todos los derechos reservados.</p>
     </footer>
 </body>
-</html> 
+</html> <!--cierre de la etiqueta html-->   
